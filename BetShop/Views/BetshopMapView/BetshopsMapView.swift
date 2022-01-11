@@ -56,7 +56,7 @@ extension BetshopsMapView {
     
     private func fullMapView(betshopList: BetshopList) -> some View {
         Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: betshopList.betshops.prefix(500)) { betshop in
-            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: betshop.location.latitude, longitude: betshop.location.longitude)) {
+            MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: betshop.location.latitude, longitude: betshop.location.longitude), anchorPoint: CGPoint(x: 0.5, y: 1)) {
                 if betshop == selectedBetshop {
                     selectedAnnotationView
                 } else {
