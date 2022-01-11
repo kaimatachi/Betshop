@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D8216F5278C64B8004EA5EC /* BetshopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8216F4278C64B8004EA5EC /* BetshopList.swift */; };
+		6D8216F7278C64D0004EA5EC /* BetshopLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8216F6278C64D0004EA5EC /* BetshopLocation.swift */; };
+		6D8216FA278C67A8004EA5EC /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8216F9278C67A8004EA5EC /* BottomSheet.swift */; };
+		6D8216FC278C680F004EA5EC /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8216FB278C680F004EA5EC /* RoundedCorner.swift */; };
+		6D821700278C6861004EA5EC /* BetshopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8216FF278C6861004EA5EC /* BetshopDetailView.swift */; };
+		6D821702278C7111004EA5EC /* BetshopDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D821701278C7111004EA5EC /* BetshopDetailViewModel.swift */; };
+		6DFD01D0278C1EFE00CF7D67 /* BetshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01CF278C1EFE00CF7D67 /* BetshopApp.swift */; };
+		6DFD01D2278C1EFE00CF7D67 /* BetshopsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01D1278C1EFE00CF7D67 /* BetshopsMapView.swift */; };
+		6DFD01D4278C1F0600CF7D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFD01D3278C1F0600CF7D67 /* Assets.xcassets */; };
+		6DFD01D7278C1F0600CF7D67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DFD01D6278C1F0600CF7D67 /* Preview Assets.xcassets */; };
+		6DFD01E2278C1F0600CF7D67 /* BetShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01E1278C1F0600CF7D67 /* BetShopTests.swift */; };
+		6DFD01ED278C1F0600CF7D67 /* BetShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01EC278C1F0600CF7D67 /* BetShopUITests.swift */; };
+		6DFD01FD278C216C00CF7D67 /* BetshopManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01FC278C216C00CF7D67 /* BetshopManager.swift */; };
+		6DFD01FF278C224400CF7D67 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD01FE278C224400CF7D67 /* LocationManager.swift */; };
+		6DFD0201278C27DA00CF7D67 /* BetshopsMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0200278C27DA00CF7D67 /* BetshopsMapViewModel.swift */; };
+		6DFD0204278C32AF00CF7D67 /* Betshop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0203278C32AF00CF7D67 /* Betshop.swift */; };
+		6DFD020C278C34C300CF7D67 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 6DFD020B278C34C300CF7D67 /* CombineMoya */; };
+		6DFD020F278C368F00CF7D67 /* BetshopAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD020E278C368F00CF7D67 /* BetshopAPI.swift */; };
+		6DFD0211278C3A9000CF7D67 /* BetshopNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0210278C3A9000CF7D67 /* BetshopNetworkManager.swift */; };
+		6DFD0214278C44A900CF7D67 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DFD0213278C44A900CF7D67 /* AppError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DFD01DE278C1F0600CF7D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFD01C4278C1EFE00CF7D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DFD01CB278C1EFE00CF7D67;
+			remoteInfo = BetShop;
+		};
+		6DFD01E9278C1F0600CF7D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DFD01C4278C1EFE00CF7D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DFD01CB278C1EFE00CF7D67;
+			remoteInfo = BetShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D8216F4278C64B8004EA5EC /* BetshopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopList.swift; sourceTree = "<group>"; };
+		6D8216F6278C64D0004EA5EC /* BetshopLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopLocation.swift; sourceTree = "<group>"; };
+		6D8216F9278C67A8004EA5EC /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		6D8216FB278C680F004EA5EC /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		6D8216FF278C6861004EA5EC /* BetshopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopDetailView.swift; sourceTree = "<group>"; };
+		6D821701278C7111004EA5EC /* BetshopDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopDetailViewModel.swift; sourceTree = "<group>"; };
+		6DFD01CC278C1EFE00CF7D67 /* Betshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Betshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFD01CF278C1EFE00CF7D67 /* BetshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopApp.swift; sourceTree = "<group>"; };
+		6DFD01D1278C1EFE00CF7D67 /* BetshopsMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopsMapView.swift; sourceTree = "<group>"; };
+		6DFD01D3278C1F0600CF7D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DFD01D6278C1F0600CF7D67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6DFD01D8278C1F0600CF7D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFD01DD278C1F0600CF7D67 /* BetShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFD01E1278C1F0600CF7D67 /* BetShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetShopTests.swift; sourceTree = "<group>"; };
+		6DFD01E3278C1F0600CF7D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFD01E8278C1F0600CF7D67 /* BetShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DFD01EC278C1F0600CF7D67 /* BetShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetShopUITests.swift; sourceTree = "<group>"; };
+		6DFD01EE278C1F0600CF7D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DFD01FC278C216C00CF7D67 /* BetshopManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopManager.swift; sourceTree = "<group>"; };
+		6DFD01FE278C224400CF7D67 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		6DFD0200278C27DA00CF7D67 /* BetshopsMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopsMapViewModel.swift; sourceTree = "<group>"; };
+		6DFD0203278C32AF00CF7D67 /* Betshop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Betshop.swift; sourceTree = "<group>"; };
+		6DFD020E278C368F00CF7D67 /* BetshopAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopAPI.swift; sourceTree = "<group>"; };
+		6DFD0210278C3A9000CF7D67 /* BetshopNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetshopNetworkManager.swift; sourceTree = "<group>"; };
+		6DFD0213278C44A900CF7D67 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DFD01C9278C1EFE00CF7D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFD020C278C34C300CF7D67 /* CombineMoya in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01DA278C1F0600CF7D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01E5278C1F0600CF7D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D8216F8278C678D004EA5EC /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				6D8216F9278C67A8004EA5EC /* BottomSheet.swift */,
+				6D8216FB278C680F004EA5EC /* RoundedCorner.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		6D8216FD278C6838004EA5EC /* BetshopMapView */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01D1278C1EFE00CF7D67 /* BetshopsMapView.swift */,
+				6DFD0200278C27DA00CF7D67 /* BetshopsMapViewModel.swift */,
+			);
+			path = BetshopMapView;
+			sourceTree = "<group>";
+		};
+		6D8216FE278C684B004EA5EC /* BetshopDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				6D8216FF278C6861004EA5EC /* BetshopDetailView.swift */,
+				6D821701278C7111004EA5EC /* BetshopDetailViewModel.swift */,
+			);
+			path = BetshopDetailView;
+			sourceTree = "<group>";
+		};
+		6DFD01C3278C1EFE00CF7D67 = {
+			isa = PBXGroup;
+			children = (
+				6DFD01CE278C1EFE00CF7D67 /* BetShop */,
+				6DFD01E0278C1F0600CF7D67 /* BetShopTests */,
+				6DFD01EB278C1F0600CF7D67 /* BetShopUITests */,
+				6DFD01CD278C1EFE00CF7D67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DFD01CD278C1EFE00CF7D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01CC278C1EFE00CF7D67 /* Betshop.app */,
+				6DFD01DD278C1F0600CF7D67 /* BetShopTests.xctest */,
+				6DFD01E8278C1F0600CF7D67 /* BetShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DFD01CE278C1EFE00CF7D67 /* BetShop */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01CF278C1EFE00CF7D67 /* BetshopApp.swift */,
+				6DFD01FA278C213200CF7D67 /* Views */,
+				6DFD01FB278C214600CF7D67 /* Managers */,
+				6DFD0202278C32A000CF7D67 /* Models */,
+				6DFD020D278C363D00CF7D67 /* Network */,
+				6DFD0212278C447700CF7D67 /* Utils */,
+				6D8216F8278C678D004EA5EC /* ViewComponent */,
+				6DFD01D3278C1F0600CF7D67 /* Assets.xcassets */,
+				6DFD01D8278C1F0600CF7D67 /* Info.plist */,
+				6DFD01D5278C1F0600CF7D67 /* Preview Content */,
+			);
+			path = BetShop;
+			sourceTree = "<group>";
+		};
+		6DFD01D5278C1F0600CF7D67 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01D6278C1F0600CF7D67 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6DFD01E0278C1F0600CF7D67 /* BetShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01E1278C1F0600CF7D67 /* BetShopTests.swift */,
+				6DFD01E3278C1F0600CF7D67 /* Info.plist */,
+			);
+			path = BetShopTests;
+			sourceTree = "<group>";
+		};
+		6DFD01EB278C1F0600CF7D67 /* BetShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01EC278C1F0600CF7D67 /* BetShopUITests.swift */,
+				6DFD01EE278C1F0600CF7D67 /* Info.plist */,
+			);
+			path = BetShopUITests;
+			sourceTree = "<group>";
+		};
+		6DFD01FA278C213200CF7D67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D8216FD278C6838004EA5EC /* BetshopMapView */,
+				6D8216FE278C684B004EA5EC /* BetshopDetailView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6DFD01FB278C214600CF7D67 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD01FC278C216C00CF7D67 /* BetshopManager.swift */,
+				6DFD01FE278C224400CF7D67 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6DFD0202278C32A000CF7D67 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D8216F4278C64B8004EA5EC /* BetshopList.swift */,
+				6DFD0203278C32AF00CF7D67 /* Betshop.swift */,
+				6D8216F6278C64D0004EA5EC /* BetshopLocation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DFD020D278C363D00CF7D67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD020E278C368F00CF7D67 /* BetshopAPI.swift */,
+				6DFD0210278C3A9000CF7D67 /* BetshopNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6DFD0212278C447700CF7D67 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6DFD0213278C44A900CF7D67 /* AppError.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DFD01CB278C1EFE00CF7D67 /* BetShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFD01F1278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShop" */;
+			buildPhases = (
+				6DFD01C8278C1EFE00CF7D67 /* Sources */,
+				6DFD01C9278C1EFE00CF7D67 /* Frameworks */,
+				6DFD01CA278C1EFE00CF7D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetShop;
+			packageProductDependencies = (
+				6DFD020B278C34C300CF7D67 /* CombineMoya */,
+			);
+			productName = BetShop;
+			productReference = 6DFD01CC278C1EFE00CF7D67 /* Betshop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DFD01DC278C1F0600CF7D67 /* BetShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFD01F4278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShopTests" */;
+			buildPhases = (
+				6DFD01D9278C1F0600CF7D67 /* Sources */,
+				6DFD01DA278C1F0600CF7D67 /* Frameworks */,
+				6DFD01DB278C1F0600CF7D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFD01DF278C1F0600CF7D67 /* PBXTargetDependency */,
+			);
+			name = BetShopTests;
+			productName = BetShopTests;
+			productReference = 6DFD01DD278C1F0600CF7D67 /* BetShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DFD01E7278C1F0600CF7D67 /* BetShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DFD01F7278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShopUITests" */;
+			buildPhases = (
+				6DFD01E4278C1F0600CF7D67 /* Sources */,
+				6DFD01E5278C1F0600CF7D67 /* Frameworks */,
+				6DFD01E6278C1F0600CF7D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFD01EA278C1F0600CF7D67 /* PBXTargetDependency */,
+			);
+			name = BetShopUITests;
+			productName = BetShopUITests;
+			productReference = 6DFD01E8278C1F0600CF7D67 /* BetShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DFD01C4278C1EFE00CF7D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					6DFD01CB278C1EFE00CF7D67 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					6DFD01DC278C1F0600CF7D67 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6DFD01CB278C1EFE00CF7D67;
+					};
+					6DFD01E7278C1F0600CF7D67 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 6DFD01CB278C1EFE00CF7D67;
+					};
+				};
+			};
+			buildConfigurationList = 6DFD01C7278C1EFE00CF7D67 /* Build configuration list for PBXProject "BetShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DFD01C3278C1EFE00CF7D67;
+			packageReferences = (
+				6DFD020A278C34C300CF7D67 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
+			productRefGroup = 6DFD01CD278C1EFE00CF7D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DFD01CB278C1EFE00CF7D67 /* BetShop */,
+				6DFD01DC278C1F0600CF7D67 /* BetShopTests */,
+				6DFD01E7278C1F0600CF7D67 /* BetShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DFD01CA278C1EFE00CF7D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFD01D7278C1F0600CF7D67 /* Preview Assets.xcassets in Resources */,
+				6DFD01D4278C1F0600CF7D67 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01DB278C1F0600CF7D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01E6278C1F0600CF7D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DFD01C8278C1EFE00CF7D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFD0211278C3A9000CF7D67 /* BetshopNetworkManager.swift in Sources */,
+				6D821702278C7111004EA5EC /* BetshopDetailViewModel.swift in Sources */,
+				6D8216F7278C64D0004EA5EC /* BetshopLocation.swift in Sources */,
+				6DFD020F278C368F00CF7D67 /* BetshopAPI.swift in Sources */,
+				6DFD0214278C44A900CF7D67 /* AppError.swift in Sources */,
+				6D8216FC278C680F004EA5EC /* RoundedCorner.swift in Sources */,
+				6D821700278C6861004EA5EC /* BetshopDetailView.swift in Sources */,
+				6D8216F5278C64B8004EA5EC /* BetshopList.swift in Sources */,
+				6DFD01FF278C224400CF7D67 /* LocationManager.swift in Sources */,
+				6DFD01D2278C1EFE00CF7D67 /* BetshopsMapView.swift in Sources */,
+				6DFD01D0278C1EFE00CF7D67 /* BetshopApp.swift in Sources */,
+				6DFD0204278C32AF00CF7D67 /* Betshop.swift in Sources */,
+				6DFD01FD278C216C00CF7D67 /* BetshopManager.swift in Sources */,
+				6D8216FA278C67A8004EA5EC /* BottomSheet.swift in Sources */,
+				6DFD0201278C27DA00CF7D67 /* BetshopsMapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01D9278C1F0600CF7D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFD01E2278C1F0600CF7D67 /* BetShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DFD01E4278C1F0600CF7D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DFD01ED278C1F0600CF7D67 /* BetShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DFD01DF278C1F0600CF7D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DFD01CB278C1EFE00CF7D67 /* BetShop */;
+			targetProxy = 6DFD01DE278C1F0600CF7D67 /* PBXContainerItemProxy */;
+		};
+		6DFD01EA278C1F0600CF7D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DFD01CB278C1EFE00CF7D67 /* BetShop */;
+			targetProxy = 6DFD01E9278C1F0600CF7D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DFD01EF278C1F0600CF7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DFD01F0278C1F0600CF7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DFD01F2278C1F0600CF7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetShop/Preview Content\"";
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BetShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShop;
+				PRODUCT_NAME = Betshop;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DFD01F3278C1F0600CF7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BetShop/Preview Content\"";
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BetShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShop;
+				PRODUCT_NAME = Betshop;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DFD01F5278C1F0600CF7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				INFOPLIST_FILE = BetShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetShop.app/BetShop";
+			};
+			name = Debug;
+		};
+		6DFD01F6278C1F0600CF7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				INFOPLIST_FILE = BetShopTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetShop.app/BetShop";
+			};
+			name = Release;
+		};
+		6DFD01F8278C1F0600CF7D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				INFOPLIST_FILE = BetShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetShop;
+			};
+			name = Debug;
+		};
+		6DFD01F9278C1F0600CF7D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3QFL6RK45;
+				INFOPLIST_FILE = BetShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.movify.BetShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BetShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DFD01C7278C1EFE00CF7D67 /* Build configuration list for PBXProject "BetShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFD01EF278C1F0600CF7D67 /* Debug */,
+				6DFD01F0278C1F0600CF7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFD01F1278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFD01F2278C1F0600CF7D67 /* Debug */,
+				6DFD01F3278C1F0600CF7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFD01F4278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFD01F5278C1F0600CF7D67 /* Debug */,
+				6DFD01F6278C1F0600CF7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DFD01F7278C1F0600CF7D67 /* Build configuration list for PBXNativeTarget "BetShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DFD01F8278C1F0600CF7D67 /* Debug */,
+				6DFD01F9278C1F0600CF7D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DFD020A278C34C300CF7D67 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DFD020B278C34C300CF7D67 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DFD020A278C34C300CF7D67 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6DFD01C4278C1EFE00CF7D67 /* Project object */;
+}
