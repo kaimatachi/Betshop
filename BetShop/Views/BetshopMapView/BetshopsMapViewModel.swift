@@ -46,9 +46,7 @@ extension BetshopsMapViewModel {
                 betshopManager.fetchBetshops(for: region)
                     .replaceError(with: BetshopList(count: 0, betshops: []))
             }
-            .sink(receiveValue: { [weak self] betshopList in
-                self?.betshopList = betshopList
-            })
+            .assign(to: \.betshopList, on: self)
     }
     
 }
