@@ -16,7 +16,7 @@ class BetshopsMapViewModel: ObservableObject {
     private static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
     
     @Published var region = MKCoordinateRegion(center: LocationManager.shared.currentLocation.value, span: defaultSpan)
-    @Published var betshopList: BetshopList?
+    @Published var betshopList = BetshopList(count: 0, betshops: [])
     
     private var betshopManager = BetshopManager()
     private var regionCancellables: AnyCancellable?
@@ -39,17 +39,14 @@ extension BetshopsMapViewModel {
         
         regionCancellables = $region
             .throttle(for: 2, scheduler: DispatchQueue.main, latest: true)
-            .setFailureType(to: Error.self)
             .handleEvents(receiveRequest:  { [regionCancellables] _ in
                 regionCancellables?.cancel()
             })
             .flatMap { [betshopManager] region in
                 betshopManager.fetchBetshops(for: region)
+                    .replaceError(with: BetshopList(count: 0, betshops: []))
             }
-            .sink(receiveCompletion: { completion in
-                guard case .failure(let error) = completion else { return }
-                print("Error to handle: \(error.localizedDescription)")
-            }, receiveValue: { [weak self] betshopList in
+            .sink(receiveValue: { [weak self] betshopList in
                 self?.betshopList = betshopList
             })
     }

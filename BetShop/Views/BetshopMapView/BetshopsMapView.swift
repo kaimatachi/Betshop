@@ -16,46 +16,30 @@ struct BetshopsMapView: View {
     @State private var selectedBetshop: Betshop?
     
     var body: some View {
-        Group {
-            if let betshopList = viewModel.betshopList {
-                fullMapView(betshopList: betshopList)
-            } else {
-                loadingView
+        fullMapView
+            .ignoresSafeArea()
+            .onAppear {
+                viewModel.fetchData()
             }
-        }
-        .ignoresSafeArea()
-        .onAppear {
-            viewModel.fetchData()
-        }
-        .bottomSheet(isPresented: $isBetshopDetailViewPresented) {
-            if let betshop = selectedBetshop {
-                BetshopDetailView(isPresented: $isBetshopDetailViewPresented, betshop: betshop)
+            .bottomSheet(isPresented: $isBetshopDetailViewPresented) {
+                if let betshop = selectedBetshop {
+                    BetshopDetailView(isPresented: $isBetshopDetailViewPresented, betshop: betshop)
+                }
             }
-        }
-        .onChange(of: isBetshopDetailViewPresented) { isPresented in
-            if !isPresented {
-                selectedBetshop = nil
+            .onChange(of: isBetshopDetailViewPresented) { isPresented in
+                if !isPresented {
+                    selectedBetshop = nil
+                }
             }
-        }
     }
-}
-
-// MARK - Loading view
-
-extension BetshopsMapView {
-    
-    private var loadingView: some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
-    }
-    
 }
 
 // MARK - Full map view
 
 extension BetshopsMapView {
     
-    private func fullMapView(betshopList: BetshopList) -> some View {
-        Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: betshopList.betshops.prefix(500)) { betshop in
+    private var fullMapView: some View {
+        Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: viewModel.betshopList.betshops.prefix(500)) { betshop in
             MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: betshop.location.latitude, longitude: betshop.location.longitude), anchorPoint: CGPoint(x: 0.5, y: 1)) {
                 if betshop == selectedBetshop {
                     selectedAnnotationView
