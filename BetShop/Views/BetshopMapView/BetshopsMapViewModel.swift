@@ -20,7 +20,6 @@ class BetshopsMapViewModel: ObservableObject {
     
     private var betshopManager = BetshopManager()
     private var regionCancellables: AnyCancellable?
-    private var cancellables = Set<AnyCancellable>()
     
 }
 
@@ -31,11 +30,8 @@ extension BetshopsMapViewModel {
     func fetchData() {
         LocationManager.shared.requestAuthorisation()
         LocationManager.shared.currentLocation
-            .sink { [weak self] newLocation in
-                guard let self = self else { return }
-                self.region = MKCoordinateRegion(center: newLocation, span: self.region.span)
-            }
-            .store(in: &cancellables)
+            .map { MKCoordinateRegion(center: $0, span: self.region.span) }
+            .assign(to: &$region)
         
         regionCancellables = $region
             .throttle(for: 2, scheduler: DispatchQueue.main, latest: true)
