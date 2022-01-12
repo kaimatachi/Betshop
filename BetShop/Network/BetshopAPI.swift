@@ -40,5 +40,4 @@ extension BetshopAPI: TargetType {
         return nil
     }
     
-    
 }
