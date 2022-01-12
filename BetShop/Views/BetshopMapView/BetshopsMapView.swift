@@ -31,6 +31,10 @@ struct BetshopsMapView: View {
                     selectedBetshop = nil
                 }
             }
+            // Fix: By doing this I force the map to refresh. It is needed because Apple do not refresh the pin location when changing to the selected state. As the size of the pin changes it points towards another location if it is not refreshed.
+            .onChange(of: selectedBetshop) { _ in
+                viewModel.region = MKCoordinateRegion(center: viewModel.region.center, span: viewModel.region.span)
+            }
     }
 }
 
