@@ -22,14 +22,14 @@ class BetshopNetworkManager {
 extension BetshopNetworkManager {
     func fetchBetshops(lat1: Double, long1: Double, lat2: Double, long2: Double) -> AnyPublisher<BetshopList, Error> {
         return provider.requestPublisher(.fetchBetshops(lat1: lat1, long1: long1, lat2: lat2, long2: long2))
-            .mapError { _ in
-                return AppError.networkError
-            }
-            .tryMap { response in
-                do {
-                    return try JSONDecoder().decode(BetshopList.self, from: response.data)
-                } catch {
-                    throw AppError.parsingError
+            .map { $0.data }
+            .decode(type: BetshopList.self, decoder: JSONDecoder())
+            .mapError { error in
+                switch error {
+                case is Swift.DecodingError:
+                    return AppError.parsingError
+                default:
+                    return AppError.networkError
                 }
             }
             .eraseToAnyPublisher()
